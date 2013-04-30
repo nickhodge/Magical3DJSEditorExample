@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>efffab2f-bfc5-4eda-b545-45ef4995f55a</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>CordovaApp_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="www\cordova-2.7.0rc1.js" />
+    <Content Include="www\css\codemirror.css" />
+    <Content Include="www\css\fontsstylesheet.css" />
+    <Content Include="www\css\index.css" />
+    <Content Include="www\css\lesser-dark.css" />
+    <Content Include="www\img\logo.png" />
+    <Content Include="www\img\smalllogo.png" />
+    <Content Include="www\img\splashscreen.png" />
+    <Content Include="www\img\storelogo.png" />
+    <Content Include="www\img\Thumbs.db" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\addon\dialog\dialog.css" />
+    <Content Include="www\js\addon\dialog\dialog.js" />
+    <Content Include="www\js\addon\display\placeholder.js" />
+    <Content Include="www\js\addon\edit\closebrackets.js" />
+    <Content Include="www\js\addon\edit\closetag.js" />
+    <Content Include="www\js\addon\edit\continuecomment.js" />
+    <Content Include="www\js\addon\edit\continuelist.js" />
+    <Content Include="www\js\addon\edit\matchbrackets.js" />
+    <Content Include="www\js\addon\fold\brace-fold.js" />
+    <Content Include="www\js\addon\fold\foldcode.js" />
+    <Content Include="www\js\addon\fold\indent-fold.js" />
+    <Content Include="www\js\addon\fold\xml-fold.js" />
+    <Content Include="www\js\addon\hint\html-hint.js" />
+    <Content Include="www\js\addon\hint\javascript-hint.js" />
+    <Content Include="www\js\addon\hint\pig-hint.js" />
+    <Content Include="www\js\addon\hint\python-hint.js" />
+    <Content Include="www\js\addon\hint\show-hint.css" />
+    <Content Include="www\js\addon\hint\show-hint.js" />
+    <Content Include="www\js\addon\hint\xml-hint.js" />
+    <Content Include="www\js\addon\lint\javascript-lint.js" />
+    <Content Include="www\js\addon\lint\json-lint.js" />
+    <Content Include="www\js\addon\lint\lint.css" />
+    <Content Include="www\js\addon\lint\lint.js" />
+    <Content Include="www\js\addon\mode\loadmode.js" />
+    <Content Include="www\js\addon\mode\multiplex.js" />
+    <Content Include="www\js\addon\mode\overlay.js" />
+    <Content Include="www\js\addon\runmode\colorize.js" />
+    <Content Include="www\js\addon\runmode\runmode-standalone.js" />
+    <Content Include="www\js\addon\runmode\runmode.js" />
+    <Content Include="www\js\addon\runmode\runmode.node.js" />
+    <Content Include="www\js\addon\search\match-highlighter.js" />
+    <Content Include="www\js\addon\search\search.js" />
+    <Content Include="www\js\addon\search\searchcursor.js" />
+    <Content Include="www\js\addon\selection\active-line.js" />
+    <Content Include="www\js\addon\selection\mark-selection.js" />
+    <Content Include="www\js\codemirror.js" />
+    <Content Include="www\js\css.js" />
+    <Content Include="www\js\htmlmixed.js" />
+    <Content Include="www\js\index.js" />
+    <Content Include="www\js\javascript.js" />
+    <Content Include="www\js\xml.js" />
+    <None Include="MagicalEditorWin8_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
